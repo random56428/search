@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="advsearch.css">
+    <title>Google Advanced Search</title>
+</head>
+
+<body>
+    <div class="container-top" style="justify-content: space-between;">
+        <div class="container-logo">
+            <a href="index.html">
+                <img src="img/google_logo.png" alt="Google Logo">
+            </a>
+        </div>
+        <div class="container-links">
+            <a href="./index.html">Google Search</a>
+        </div>
+    </div>
+    <div class="container-bottom">
+        <div class="container-bottom-label">
+            <div class="search-label">
+                <label>Advanced Search</label>
+            </div>
+        </div>
+        <hr class="horizontal-rule">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <div>
+                            Find pages with...
+                        </div>
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <form action="https://google.com/search">
+                    <tr>
+                        <td>
+                            <div>all these words:</div>
+                        </td>
+                        <td><input type="text" name="as_q"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>this exact word or phrase:</div>
+                        </td>
+                        <td><input type="text" name="as_epq"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>any of these words:</div>
+                        </td>
+                        <td><input type="text" name="as_oq"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>none of these words:</div>
+                        </td>
+                        <td><input type="text" name="as_eq"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="container-button">
+                            <input type="submit" value="Advanced Search">
+                        </td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

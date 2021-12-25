@@ -1,0 +1,32 @@
+body {
+    margin: 0 !important;
+    font-family: Arial, sans-serif !important;
+}
+
+.container-top {
+    display: flex;
+    height: 48px;
+    justify-content: end;
+    align-items: center;
+    padding: 6px;
+
+    .container-links {
+        height: 48px;
+        font-size: small;
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+        margin-right: 15px;
+    
+        a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+}

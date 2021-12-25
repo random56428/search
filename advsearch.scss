@@ -1,0 +1,156 @@
+@use 'common';
+
+.container-top {
+    padding: 8px;
+    
+    .container-logo {
+        display: flex;
+        height: 24px;
+        margin-left: 8px;
+        padding: 6px;
+        a {
+            img {
+                height: 24px;
+            }
+        }
+    }
+}
+
+.container-bottom {
+
+    .container-bottom-label {
+        height: 23px;
+        font-size: 20px;
+        margin: 25px 35px;
+
+        .search-label {
+            color: rgb(217, 48, 37);
+
+            label {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .horizontal-rule {
+        border: 1px solid rgba(235, 235, 235, 0.6);
+    }
+
+    $th-height: 41px;
+    $td-height: $th-height;
+    $cell-padding: 0;
+    $cell-width-1nd: 182px;
+    $cell-width-2nd: 569px;
+
+    table {
+        margin-top: 39px;
+        margin-left: 45px;
+
+        thead {
+            tr {
+                display: flex;
+                
+                th {
+                    padding: $cell-padding;
+                    height: $th-height;
+                }
+
+                th:nth-child(1) {    
+                    width: $cell-width-1nd;
+                    align-items: flex-start;
+                    font-weight: lighter;
+                    font-size: 16px;
+
+                    div {
+                        text-align: start;
+                        margin: 6px 0px;
+                    }
+                }
+
+                th:nth-child(2) {
+                    width: $cell-width-2nd;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                display: flex;
+
+                td {
+                    padding: $cell-padding;
+                    height: $td-height;
+                }
+
+                td:nth-child(1) {
+                    width: $cell-width-1nd;
+                    align-items: flex-start;
+                    font-size: 13px;
+
+                    div {
+                        margin: 7px 0px;
+                    }
+
+                }
+
+                td:nth-child(2) {
+                    align-items: flex-start;
+                    width: $cell-width-2nd;
+
+                    input {
+                        outline: none;
+                        border: 1px solid rgb(217, 217, 217);
+                        border-top: 1px solid rgb(192, 192, 192);
+                        padding: 1px 8px;
+                        width: 552px;
+                        height: 25px;
+                    }
+
+                    input:focus {
+                        border: 1px solid rgb(77, 144, 254);
+                        box-shadow: 0 1px 2px rgb(0, 0, 0, 0.25) inset;
+                    }
+
+                }
+
+                td.container-button {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+
+                    input {
+                        border-radius: 2px;
+                        font-size: 11px;
+                        width: 120px !important;
+                        height: 30px !important;
+                        margin: 10px 0px;
+                        padding: 0px 12px !important;
+                        border: 1px solid rgb(48, 121, 237);
+                        background: linear-gradient(rgb(76, 143, 253), rgb(71, 135, 237));
+                        color: white;
+                        font-weight: bold;
+                    }
+
+                    input:hover {
+                        border: 1px solid rgb(47, 91, 183);
+                        background: linear-gradient(rgb(76, 143, 253), rgb(53, 122, 232));
+                    }
+
+                    input:active {
+                        box-shadow: 0 0 4px rgb(0, 0, 0, 0.2) inset;
+                    }
+
+                    input:active:not(:hover) {
+                        border: 1px solid rgb(47, 91, 183);
+                        background: rgb(53, 122, 232);
+                    }
+
+                    input:not(:active):not(:hover):focus {
+                        border: 1px solid rgb(71, 135, 237);
+                        box-shadow: 0 0 0 1px white inset;
+                    }
+                }
+            }
+        }
+    }
+}
